@@ -3,16 +3,41 @@ layout: '../layouts/Layout.astro'
 title: 'Tokyo Itinerary'
 ---
 
-# Tokyo Itinerary
+import Hero from '../../components/Hero.astro';
+import Card from '../../components/Card.astro';
+import ImageGallery from '../../components/ImageGallery.astro';
+import Map from '../../components/Map.astro';
 
-Welcome to the Tokyo itinerary! Here, you'll find a detailed guide to exploring the vibrant city of Tokyo.
+<Hero 
+  title="Tokyo Itinerary" 
+  subtitle="Explore the vibrant city of Tokyo" 
+  backgroundImage="../assets/background.svg" 
+/>
 
 ## Highlights
 
-- **Shibuya Crossing**: Experience the world's busiest pedestrian crossing.
-- **Tokyo Tower**: Enjoy breathtaking views of the city.
-- **Asakusa**: Visit the historic Senso-ji Temple.
-- **Akihabara**: Dive into the world of anime and electronics.
+<div class="highlights">
+  <Card 
+    title="Shibuya Crossing" 
+    description="Experience the world's busiest pedestrian crossing." 
+    image="../assets/shibuya-crossing.jpg" 
+  />
+  <Card 
+    title="Tokyo Tower" 
+    description="Enjoy breathtaking views of the city." 
+    image="../assets/tokyo-tower.jpg" 
+  />
+  <Card 
+    title="Asakusa" 
+    description="Visit the historic Senso-ji Temple." 
+    image="../assets/asakusa.jpg" 
+  />
+  <Card 
+    title="Akihabara" 
+    description="Dive into the world of anime and electronics." 
+    image="../assets/akihabara.jpg" 
+  />
+</div>
 
 ## Day 1: Arrival and Exploration
 
@@ -31,7 +56,17 @@ Welcome to the Tokyo itinerary! Here, you'll find a detailed guide to exploring 
 
 ## Photos
 
-![Tokyo Tower](../assets/tokyo-tower.jpg)
-![Shibuya Crossing](../assets/shibuya-crossing.jpg)
+<ImageGallery>
+  <img src="../assets/tokyo-tower.jpg" alt="Tokyo Tower" />
+  <img src="../assets/shibuya-crossing.jpg" alt="Shibuya Crossing" />
+</ImageGallery>
+
+## Map
+
+<Map 
+  latitude="35.6895" 
+  longitude="139.6917" 
+  zoom="12" 
+/>
 
 Stay tuned for more updates on your Tokyo adventure!
