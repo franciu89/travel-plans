@@ -10,4 +10,4 @@ const { title, subtitle, backgroundImage } = Astro.props;
   </div>
 </div>
 
-<link rel="stylesheet" href="../styles/Hero.css">
+<link rel="stylesheet" href={`${import.meta.env.BASE_URL}/styles/Hero.css`} />
