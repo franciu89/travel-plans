@@ -1,14 +1,14 @@
 ---
-// Props: title, description, image
-const { title, description, image } = Astro.props;
+// Props: title, description, image, href
+const { title, description, image, href } = Astro.props;
 ---
 
-<div class="card">
+<a href={`${import.meta.env.BASE_URL}/${href}`} class="card">
   <img src={image} alt={title} class="card-image" />
   <div class="card-content">
     <h3 class="card-title">{title}</h3>
     <p class="card-description">{description}</p>
   </div>
-</div>
+</a>
 
 <link rel="stylesheet" href={`${import.meta.env.BASE_URL}/styles/Card.css`} />

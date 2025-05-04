@@ -1,0 +1,26 @@
+---
+import Card from "../../components/Card.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout>
+  <h1>Spring Itineraries</h1>
+
+  <div class="city-cards">
+    <Card
+      title="Tokyo"
+      description="Explore the vibrant city of Tokyo."
+      image="../../assets/tokyo.jpg"
+      href="spring/tokyo"
+    />
+  </div>
+</Layout>
+
+<style>
+  .city-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
