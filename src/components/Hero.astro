@@ -1,0 +1,13 @@
+---
+// Props: title, subtitle, backgroundImage
+const { title, subtitle, backgroundImage } = Astro.props;
+---
+
+<div class="hero" style={`background-image: url('${backgroundImage}')`}>
+  <div class="hero-content">
+    <h1 class="hero-title">{title}</h1>
+    <p class="hero-subtitle">{subtitle}</p>
+  </div>
+</div>
+
+<link rel="stylesheet" href="../styles/Hero.css">

@@ -1,0 +1,33 @@
+/* Footer styles */
+
+.footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: 500;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,16 @@
+/* Map styles */
+
+.map-container {
+  width: 100%;
+  height: 400px;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.map-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
